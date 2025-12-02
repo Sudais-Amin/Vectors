@@ -1,0 +1,32 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+	
+int size;
+cout<<"Enter the Size of Vector : "<<endl; cin>>size;
+vector<int> vec(size);
+
+for(int i=0 ;i<size ; i++)
+{
+	cout<<"Enter the  "<<i<<"  Index Value : "<<endl;
+	cin>>vec.at(i);
+	
+}
+bool found=false;
+int target;
+cout<<endl<<"Enter the Value of Target = "; cin>>target;
+cout<<"-------------- OUTPUT -----------------"<<endl;
+
+	for(int i=0;i<size;i++)
+{
+		if(vec.at(i) == target)
+		{
+			cout<<"Target is at Index = "<<i;
+			found=true;
+		}}
+	if(found == false)
+	cout<<endl<<endl<<"Invalid Input...!";
+		return 0;
+}
