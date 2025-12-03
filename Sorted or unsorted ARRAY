@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main(){
+	//checking wether array is sorted or not
+	int size;
+	cout<<"Enter the Size of Array : "; cin>>size;
+
+	int arr[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the  "<< i <<"  Index of Array : "; 
+	cin>>arr[i];
+}
+
+
+bool x = false;	
+
+	for(int i=1 ; i<size ; i++)
+{
+	if ( arr[i] < arr[i-1] )
+	 x=true;
+}	
+cout<<endl;
+cout<<"--------Output---------"<<endl;
+if(x == false)
+cout<<"Array is Sorted";
+
+else
+cout<<"Array is  NOT  Sorted";
+	
+return 0;	
+}
