@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int size;
+	cout<<"Enter the Size of Array : "; cin>>size;
+	
+	int arr[size];
+	
+for (int i = 0; i < size; i++)
+{
+	cout<<"Enter the  "<<i<< "  Index of Array : "; cin>> arr[i];	
+}
+
+int even = 0 , odd = 0 ;
+
+
+for (int i=0; i < size; i++)
+{
+	if(arr[i]%2 == 0)
+	even = even + arr[i];
+	else
+	odd = odd + arr[i];
+}
+
+cout<<"Sum of Values at EVEN Index : "<<even<<endl;
+cout<<"Sum of Values at ODD  Index : "<<odd;
+
+}
